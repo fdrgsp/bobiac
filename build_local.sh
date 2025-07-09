@@ -34,12 +34,12 @@ fi
 
 # Build the book
 echo "🔧 Building Jupyter Book with Sphinx..."
-python3 -m sphinx -a . -b html _build/html
+python -m sphinx -a . -b html _build/html
 echo "📘 Book built successfully at _build/html/"
 
 # update notebook html styles
 echo "🎨 Applying HTML styles to headers..."
-python3 "$(dirname "$0")/update_html_styles.py" _build/html/content
+python "$(dirname "$0")/update_html_styles.py" _build/html/content
 echo "✅ HTML styles applied successfully."
 
 # Prepare built notebook downloads in _build/html/notebooks/ and 
@@ -57,8 +57,8 @@ for notebook in $(find content/ -name "*.ipynb"); do
   mkdir -p "$colab_dir"
 
   echo "📓 Processing $rel_path..."
-  python3 "$(dirname "$0")/update_notebooks.py" "$notebook" "$notebook_path"
-  python3 "$(dirname "$0")/update_notebooks_colab.py" "$notebook" "$colab_path"
+  python "$(dirname "$0")/update_notebooks.py" "$notebook" "$notebook_path"
+  python "$(dirname "$0")/update_notebooks_colab.py" "$notebook" "$colab_path"
 done
 
 echo "✅ Updated notebooks copied to _build/html/notebooks/"
@@ -111,7 +111,7 @@ except subprocess.TimeoutExpired:
 
   echo "🚀 Launching local server at http://localhost:8000 ..."
   cd _build/html
-  python3 -m http.server 8000 &
+  python -m http.server 8000 &
   SERVER_PID=$!
   cd ../../
   sleep 1  # Give the server time to start
