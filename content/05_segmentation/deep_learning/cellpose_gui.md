@@ -9,7 +9,7 @@
 At its core, **Cellpose** uses a **pretrained deep neural network** to segment cells based on learned features. It supports both **2D** and **3D datasets**, and can handle a variety of **morphologies**, including nuclei, cytoplasm, whole cells, and irregular structures. Users can also **train custom models** using their own data if the pretrained model doesn't fit their needs.
 
 <div align="center">
-    <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41592-020-01018-x/MediaObjects/41592_2020_1018_Fig1_HTML.png?as=webp" alt="Cellpose Flow Fields" width="700">
+    <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41592-020-01018-x/MediaObjects/41592_2020_1018_Fig1_HTML.png?as=webp" alt="Cellpose Flow Fields" width="600">
 </div>
 
 <br>
@@ -23,34 +23,58 @@ The project is well-supported with **documentation, tutorials, and example datas
 * A **Python package** (recommended for scripting and integration into pipelines)
 * A **Graphical User Interface (GUI)** for interactive use
 
-To install Cellpose via Python:
+Below are the instructions to install Cellpose using [`uv`](https://docs.astral.sh/uv/).
 
-```bash
-pip install cellpose
-```
+You can use `uv` to install Cellpose in two ways:
 
-To install the GUI:
+1. **Direct execution**: Use `uv` to automatically handle environment creation and run the GUI directly
+2. **Manual environment setup**: Create a virtual environment first, then install Cellpose within that environment
 
-```bash
-pip install cellpose[gui]
-```
+### 1. Direct Execution with uv
 
-For detailed installation instructions, including GPU acceleration and dependencies, see the [installation guide](https://www.cellpose.org/installation.html).
-
-You can launch the GUI with:
-
-```bash
-python -m cellpose
-```
-
-We can also use `uv` to install and run the latest version of Cellpose using the following command:
+By simply running the command below, `uv` will create a virtual environment, install Cellpose, and launch the GUI (it might take a little while the first time you run this command but after that it will be very quick).
 
 ```bash
 uvx --from "cellpose[gui]" cellpose
 ```
 
+### 2. Manual Environment Setup
+
+If you need to use Cellpose for scripting and integration into pipelines, it is then useful to set up a virtual environment manually. Here are the steps:
+
+**1. Create a new virtual environment:**
+
+```bash
+python -m venv cellpose-env
+```
+
+**2. Activate the virtual environment:**
+
+```bash
+# On Linux or macOS
+source cellpose-env/bin/activate
+# On Windows use 
+cellpose-env\Scripts\activate
+```
+
+**3. Install Cellpose:**
+
+```bash
+uv pip install cellpose
+```
+
+If you will also need to run the Cellpose through the GUI, you should install it with GUI support:
+
+```bash
+uv pip install "cellpose[gui]"
+```
+
+And then, to launch the GUI:
+
+```bash
+python -m cellpose # (or simply cellpose)
+```
+
 ## What's Next?
 
-In the next sections, we will demonstrate:
-
-**TODO: FEDERICO, CELLPOSE GUI DEMO AND ETC.**
+In the next sections, we will briefly demonstrate [how to use Cellpose through the GUI](cellpose_gui.md) and then focus more on how to use it in scripts and pipelines to automate the segmentation process on multiple images. We will also show how to train custom models if the pretrained model does not fit your specific needs.
