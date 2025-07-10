@@ -25,10 +25,16 @@ The project is well-supported with **documentation, tutorials, and example datas
 
 Below are the instructions to install Cellpose using [`uv`](https://docs.astral.sh/uv/).
 
-You can use `uv` to install Cellpose in two ways:
+<p class="alert alert-warning">
+    <strong>Note:</strong> If you want to use latest CellposeSAM model, make sure to run it using GPU or it will be very slow. If you have an Apple Silicon Mac, you can take advantage of the built-in GPU.
+    ...ADD MORE INFO???
+</p>
+
+You can use `uv` to use/install Cellpose in three ways:
 
 1. **Direct execution**: Use `uv` to automatically handle environment creation and run the GUI directly
 2. **Manual environment setup**: Create a virtual environment first, then install Cellpose within that environment
+3. **Jupyter Notebook Integration**: Use `uvx juv` with the Jupyter notebooks from this course to run the Cellpose notebooks directly in the browser
 
 ### 1. Direct Execution with uv
 
@@ -73,6 +79,17 @@ And then, to launch the GUI:
 
 ```bash
 python -m cellpose # (or simply cellpose)
+```
+
+### 3. Jupyter Notebook Integration
+
+To run the [Cellpose Notebook](cellpose_notebook.ipynb) or the [Cellpose Training Notebook](cellpose_retraining_notebook.ipynb) locally in your browser, you can use the following command:
+
+```bash
+# for the cellpose notebook
+uvx juv run path/to/cellpose_notebook.ipynb
+# or for the cellpose training notebook
+uvx juv run path/to/cellpose_retraining_notebook.ipynb
 ```
 
 ## What's Next?
