@@ -42,13 +42,13 @@ uvx --from "cellpose[gui]" cellpose
 
 If you need to use Cellpose for scripting and integration into pipelines, it is then useful to set up a virtual environment manually. Here are the steps:
 
-**1. Create a new virtual environment:**
+**2.1. Create a new virtual environment:**
 
 ```bash
 python -m venv cellpose-env
 ```
 
-**2. Activate the virtual environment:**
+**2.2. Activate the virtual environment:**
 
 ```bash
 # On Linux or macOS
@@ -57,7 +57,7 @@ source cellpose-env/bin/activate
 cellpose-env\Scripts\activate
 ```
 
-**3. Install Cellpose:**
+**2.3. Install Cellpose:**
 
 ```bash
 uv pip install cellpose
@@ -77,4 +77,4 @@ python -m cellpose # (or simply cellpose)
 
 ## What's Next?
 
-In the next sections, we will briefly demonstrate [how to use Cellpose through the GUI](cellpose_gui.md) and then focus more on how to use it in scripts and pipelines to automate the segmentation process on multiple images. We will also show how to train custom models if the pretrained model does not fit your specific needs.
+In the next sections, we will briefly demonstrate how to use Cellpose through the GUI] and then focus more on how to use [Cellpose in scripts and pipelines](cellpose_notebook.ipynb) to automate the segmentation process on multiple images. We will also show how to [train a Cellpose custom models](cellpose_retraining_notebook.ipynb) if the pretrained model does not fit your specific needs.
