@@ -27,7 +27,6 @@ Below are the instructions to install Cellpose using [`uv`](https://docs.astral.
 
 <p class="alert alert-warning">
     <strong>Note:</strong> If you want to use latest CellposeSAM model, make sure to run it using GPU or it will be very slow. If you have an Apple Silicon Mac, you can take advantage of the built-in GPU.
-    ...ADD MORE INFO???
 </p>
 
 You can use `uv` to use/install Cellpose in three ways:
