@@ -62,11 +62,10 @@ parts:
   chapters:
   - file: student_group_work/student_group_work.md
 
-
 # COURSE DATA
-- caption: Data
+- caption: Course Materials Downloads
   chapters:
-  - file: data/course_data.md
+  - file: data/course_downloads.md
 
 
 # LINKS/EXTRA
