@@ -5,8 +5,11 @@
 <strong> 05 - <i class="fa-solid fa-disease"></i> Image Segmentation</strong>
 
 - Classical Methods: <a href="https://drive.google.com/uc?export=download&id=1Svlnr2R5CYf5NvRzx3FxghrrxdfnPdiY"> <i class="fas fa-download"></i> DAPI dataset</a>
-- Machine Learning Methods: Ilastik <a href="../_static/data/05_segmentation_ilastik.zip" download> <i class="fas fa-download"></i>Pixel Classification Dataset </a> (from Ilastik Example Data Mitocheck 2D+t)
-- Deep Learning Methods: Cellpose
+- Machine Learning Methods:
+  - <a href="../_static/data/05_segmentation_ilastik.zip" download> <i class="fas fa-download"></i> Ilastik Pixel Classification Dataset </a> (from Ilastik Example Data Mitocheck 2D+t)
+- Deep Learning Methods:
+  - <a href="../_static/data/05_segmentation_cellpose.zip" download> <i class="fas fa-download"></i>Cellpose Dataset </a>
+  - <a href="../_static/data/05_segmentation_cellpose_training.zip" download> <i class="fas fa-download"></i>Cellpose Training Dataset </a>
 
 <strong> 07 - <i class="fa-solid fa-disease"></i> Measurement & Quantification</strong>
 
