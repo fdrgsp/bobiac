@@ -40,7 +40,7 @@ dependencies = [
     "pre-commit",
     "tqdm",
     "pandas",
-    "cellpose"
+    "cellpose",
     "bioio>=3.0.0",
     "bioio_tifffile",
     "bioio-nd2", 
