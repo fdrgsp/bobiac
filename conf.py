@@ -1,4 +1,4 @@
-author = "Image Analysis Collaboratory @ Harvard Medical School"
+author = "Federico Gasparoli - federico.gasparoli@gmail.com, Image Analysis Collaboratory @ Harvard Medical School"
 comments_config = {"hypothesis": False, "utterances": False}
 copyright = "2025"
 
@@ -85,4 +85,11 @@ exclude_patterns = [
     "README.md",
     "update_notebooks.py",
     "build.sh",
+    # "content/03_python_basics/**",
+    # "content/04_digital_images_intro/**",
+    # "content/05_segmentation/**",
+    # "content/06_object_classification/**",
+    # "content/07_measurement_and_quantification/**",
+    # "content/08_colocalization/**",
+    # "content/09_reproducibility_and_image_ethics/**",
 ]
