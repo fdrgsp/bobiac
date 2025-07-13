@@ -19,7 +19,7 @@ All `Lecture Slides` within the book are available for download as PDFs.
 <br>
 You can download the complete slide decks from the [Course Materials Downloads](data/course_downloads.md) section of this book.
 <br>
-Additionally, each individual page that contains lecture slides has a `Download this Slides` button at the top for convenient access to slides for that specific topic.
+Additionally, each individual page that contains lecture slides has a `Download the Slides` button at the top for convenient access to slides for that specific topic.
 
 ### Jupyter Notebooks
 
@@ -39,7 +39,7 @@ After installing `uv` you can run the following commands in your terminal to ope
 uvx juv run path/to/your/notebook.ipynb
 ```
 
-If you did install `juv`, you can simply run:
+If you already ran `uv tool install juv`, you can simply run:
 
 ```bash
 juv run path/to/your/notebook.ipynb
