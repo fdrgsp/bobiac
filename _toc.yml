@@ -8,7 +8,7 @@ parts:
 # COURSE MATERIAL
 - caption: Course Material
   chapters:
-  - file: content/01_intro_bioimage_analysis/bioimage_analysis_intro.md
+  - file: content/01_intro_to_bobiac/bobiac_intro.md
 
   - file: content/02_getting_started_with_python/getting_started_with_python.md
 
@@ -68,7 +68,11 @@ parts:
   chapters:
   - url: https://iac.hms.harvard.edu/bobiac/2025
     title: BoBiAC
+  - url: https://docs.astral.sh/uv/
+    title: uv
+  - url: https://github.com/manzt/juv
+    title: juv
   - url: https://iac.hms.harvard.edu
-    title: Image Analysis Collaboratory
-  - url: https://iac.hms.harvard.edu/bobiac/2025/uv_instruction.html
-    title: uv Installation Instruction
+    title: Image Analysis Collaboratory (IAC)
+  - url: https://cite.hms.harvard.edu
+    title: Core for Imaging Technology & Education (CITE)
