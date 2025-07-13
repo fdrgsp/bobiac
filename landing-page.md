@@ -19,7 +19,7 @@ All `Lecture Slides` within the book are available for download as PDFs.
 <br>
 You can download the complete slide decks from the [Course Materials Downloads](data/course_downloads.md) section of this book.
 <br>
-Additionally, each individual page that contains lecture slides has a `Download this Slides` button at the top for convenient access to slides for that specific topic.
+Additionally, each individual page that contains lecture slides has a `Download the Slides` button at the top for convenient access to slides for that specific topic.
 
 ### Jupyter Notebooks
 
@@ -44,6 +44,8 @@ If you already ran `uv tool install juv`, you can simply run:
 ```bash
 juv run path/to/your/notebook.ipynb
 ```
+
+More details can be found in the [Getting Started with Python and `uv`](content/02_getting_started_with_python/getting_started_with_python.md) section of this book.
 
 ### Course Datasets
 

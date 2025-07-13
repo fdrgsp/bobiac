@@ -7,15 +7,6 @@ from update_styles_data import EXAMPLE_STYLE, EXERCISE_STYLE, H2_STYLE, H3_STYLE
 # List of HTML files to exclude from styling (filename only, not full path)
 EXCLUDE_FROM_STYLING = [
     # Add HTML filenames here to exclude them from header styling
-    "bioimage_analysis_intro.html",
-    "python_basics.html",
-    "digital_images_intro.html",
-    "object_classification.html",
-    "measurement_and_quantification_intro.html",
-    "reproducibility_and_image_ethics.html",
-    "python_for_digital_images.html",
-    "segmentation_intro.html",
-    "intro_to_ilastik.html",
 ]
 
 
