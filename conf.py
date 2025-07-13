@@ -85,6 +85,10 @@ exclude_patterns = [
     "README.md",
     "update_notebooks.py",
     "build.sh",
+    # This is to exclude the specific notebook from the build to speed up the process
+    # during development.
+    # "content/01_intro_to_bobiac/**",
+    # "content/02_getting_started_with_python/**",
     # "content/03_python_basics/**",
     # "content/04_digital_images_intro/**",
     # "content/05_segmentation/**",

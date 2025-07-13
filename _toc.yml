@@ -8,7 +8,7 @@ parts:
 # COURSE MATERIAL
 - caption: Course Material
   chapters:
-  - file: content/01_intro_bioimage_analysis/bioimage_analysis_intro.md
+  - file: content/01_intro_to_bobiac/bobiac_intro.md
 
   - file: content/02_getting_started_with_python/getting_started_with_python.md
 
