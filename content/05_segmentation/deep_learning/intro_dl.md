@@ -13,52 +13,7 @@ Welcome everyone. Today, we’re going to begin our journey into the world of de
 This section introduces the basic ideas behind deep learning in an intuitive, non-technical way. It aims to explain what neural networks are, how they “learn,” and why these methods are so powerful for tasks like segmentation in biological images.
 
 
-### What is a Neural Network?
-
-A neural network is a mathematical model inspired by how the brain works. It is made up of layers of units called neurons, which are connected to each other and pass information forward.
-
-Each neuron performs a very simple task:
-1. It takes in numbers as input.
-2. It combines them in a weighted way (like multiplying by importance).
-3. It passes the result through a simple function.
-4. It sends this value to the next layer of neurons.
-
-If you stack many such layers on top of each other, you get a deep neural network—hence the term deep learning.
-
-
-<div align="center">
-    <img src="../../../_static/images/deep_learning/ann.png" alt="ANN" width="700">
-</div>
-
-*Source: https://towardsdatascience.com/the-concept-of-artificial-neurons-perceptrons-in-neural-networks-fab22249cbfc/*
-
-
-### How Does a Neural Network Learn?
-Neural networks learn by example, not by rules.
-
-Here’s how it works:
-
-1. You give the model an image (e.g., of a cell) and the correct answer (a labeled segmentation mask).
-2. The model makes a guess (its prediction).
-3. It compares its guess to the correct answer using a loss function (a measure of error).
-4. It updates its internal settings (weights) to do better next time.
-
-This process is called training, and it's repeated over thousands of examples until the network gets good at making predictions.
-
-
-### What Makes Deep Learning Different?
-Traditional algorithms follow explicit instructions that we write. For example:
-
-- “If a pixel is brighter than 100, mark it as foreground.”
-- “Apply a Gaussian blur, then find the edges.”
-
-Deep learning, in contrast, learns its own instructions. It creates internal representations of features in the image and decides for itself how to best solve the task. This is powerful because:
-
-- It can handle noise and variability.
-- It finds patterns we might miss.
-- It doesn’t need us to handcraft every rule.
-
-**Key idea:** *We don’t program deep learning models—we train them.*
+ 
 
 
 ### Why Deep Learning in Microscopy?
