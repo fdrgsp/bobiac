@@ -25,7 +25,7 @@ Although points are the simplest type of object, many of the learned concepts ar
 ## Slides
 
 <a
-    class="custom-button custom-download-button" href="../../pdfs/08_colocalization/templates.pdf" download> <i class="fas fa-download"></i> Download this Slides
+    class="custom-button custom-download-button" href="../../pdfs/08_colocalization/templates.pdf" download> <i class="fas fa-download"></i> Download the Slides
 </a>
 
 <div align="center">
