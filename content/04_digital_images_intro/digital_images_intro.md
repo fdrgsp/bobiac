@@ -15,10 +15,22 @@ We will use python in practice to:
 
 ## Slides
 
+### Inroduction to Digital Images
+
 <a
     class="custom-button custom-download-button" href="../../pdfs/04_digital_images_intro/templates.pdf" download> <i class="fas fa-download"></i> Download the Slides
 </a>
 
 <div align="center">
   <iframe class="custom-pdf-frame" src="../../pdfs/04_digital_images_intro/templates.pdf"> </iframe>
+</div>
+
+### Python for Bioimage Analysis
+
+<a
+    class="custom-button custom-download-button" href="../../pdfs/04_digital_images_intro/python_for_bioimage_analysis_beginners.pdf" download> <i class="fas fa-download"></i> Download the Slides
+</a>
+
+<div align="center">
+  <iframe class="custom-pdf-frame" src="../../pdfs/04_digital_images_intro/python_for_bioimage_analysis_beginners.pdf"> </iframe>
 </div>
