@@ -119,10 +119,18 @@ if __name__ == "__main__":
 
     # Require input path as command line argument
     if len(sys.argv) != 2:
-        print("Usage: python update_html_styles.py <path_to_html_directory>")
+        print("Usage: python update_html_styles.py <path_to_html_directory_or_file>")
         print("Example: python update_html_styles.py _build/html/content")
+        print("         python update_html_styles.py _build/landing-page.html")
         sys.exit(1)
 
     input_path = sys.argv[1]
+    input_path_obj = Path(input_path)
 
-    process_html_notebooks(input_path)
+    if input_path_obj.is_dir():
+        process_html_notebooks(input_path)
+    elif input_path_obj.is_file():
+        process_html_file(input_path_obj)
+    else:
+        print(f"❌ Path not found: {input_path}")
+        sys.exit(1)
