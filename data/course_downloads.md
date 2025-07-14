@@ -2,14 +2,15 @@
 
 ## Course Data
 
+<strong> 04 - <i class="fas fa-table-cells"></i> Introduction to Digital Images</strong>
+
+- <i>Python for Bioimage Analysis</i>: <a href="../_static/data/04_python_for_bioimage_analysis.zip" download> <i class="fas fa-download"></i> Python for Bioimage Analysis Dataset</a>
+
 <strong> 05 - <i class="fa-solid fa-disease"></i> Image Segmentation</strong>
 
 - Classical Methods: <a href="https://drive.google.com/uc?export=download&id=1Svlnr2R5CYf5NvRzx3FxghrrxdfnPdiY"> <i class="fas fa-download"></i> DAPI dataset</a>
-- Machine Learning Methods:
-  - <a href="../_static/data/05_segmentation_ilastik.zip" download> <i class="fas fa-download"></i> Ilastik Pixel Classification Dataset </a> (from Ilastik Example Data Mitocheck 2D+t)
-- Deep Learning Methods:
-  - <a href="../_static/data/05_segmentation_cellpose.zip" download> <i class="fas fa-download"></i>Cellpose Dataset </a>
-  - <a href="../_static/data/05_segmentation_cellpose_training.zip" download> <i class="fas fa-download"></i>Cellpose Training Dataset </a>
+- Machine Learning Methods: <a href="../_static/data/05_segmentation_ilastik.zip" download> <i class="fas fa-download"></i> Ilastik Pixel Classification Dataset </a> (from Ilastik Example Data Mitocheck 2D+t)
+- Deep Learning Methods: <a href="../_static/data/05_segmentation_cellpose.zip" download> <i class="fas fa-download"></i>Cellpose Dataset </a>   <a href="../_static/data/05_segmentation_cellpose_training.zip" download> <i class="fas fa-download"></i>Cellpose Training Dataset </a>
 
 <strong> 07 - <i class="fa-solid fa-chart-simple"></i> Measurement & Quantification</strong>
 
@@ -18,6 +19,7 @@
 <strong> 08 - <i class="fa-solid fa-location-crosshairs"></i> Colocalization</strong>
 
 - Pixel Intensity Based: <a href="../_static/data/08_pixel_intensity_based_coloc.zip" download> <i class="fas fa-download"></i> Mander's & Pearson's Colocalization Dataset</a>
+- Object Based: <a href="../_static/data/08_object_based_colocalization.zip" download> <i class="fas fa-download"></i> Object Based Colocalization Dataset</a>
 
 ## Download All Course Materials
 
