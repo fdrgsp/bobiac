@@ -40,7 +40,7 @@ You can use `uv` to use/install Cellpose in three ways:
 By simply running the command below, `uv` will create a virtual environment, install Cellpose, and launch the GUI (it might take a little while the first time you run this command but after that it will be very quick).
 
 ```bash
-uvx --from "cellpose[gui]" cellpose
+uvx "cellpose[gui]"
 ```
 
 ### 2. Manual Environment Setup
@@ -49,8 +49,10 @@ If you need to use Cellpose for scripting and integration into pipelines, it is 
 
 **2.1. Create a new virtual environment:**
 
+When using `uv`, you can create a virtual environment with the following command:
+
 ```bash
-python -m venv cellpose-env
+uv venv cellpose-env
 ```
 
 **2.2. Activate the virtual environment:**
@@ -82,15 +84,13 @@ python -m cellpose # (or simply cellpose)
 
 ### 3. Jupyter Notebook Integration
 
-To run the [Cellpose Notebook](cellpose_notebook.ipynb) or the [Cellpose Training Notebook](cellpose_retraining_notebook.ipynb) locally in your browser, you can use the following command:
+To run for example the [Cellpose Notebook](cellpose_notebook.ipynb) locally in your browser, you can use the following command:
 
 ```bash
 # for the cellpose notebook
-uvx juv run path/to/cellpose_notebook.ipynb
-# or for the cellpose training notebook
-uvx juv run path/to/cellpose_retraining_notebook.ipynb
+uvx juv run path/to/cellpose_notebook.ipynb # (or simply juv run cellpose_notebook.ipynb if you have the tool)
 ```
 
 ## What's Next?
 
-In the next sections, we will briefly demonstrate how to use Cellpose through the GUI] and then focus more on how to use [Cellpose in scripts and pipelines](cellpose_notebook.ipynb) to automate the segmentation process on multiple images. We will also show how to [train a Cellpose custom models](cellpose_retraining_notebook.ipynb) if the pretrained model does not fit your specific needs.
+In the next sections, we will briefly demonstrate how to use Cellpose through the GUI] and then focus more on how to use [Cellpose in scripts and pipelines](cellpose_notebook.ipynb) to automate the segmentation process on multiple images. We will also show how to [train a Cellpose custom models](cellpose_retraining_colab.ipynb) if the pretrained model does not fit your specific needs.
