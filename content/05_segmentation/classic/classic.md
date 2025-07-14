@@ -27,12 +27,11 @@ In **Act 2**, we will finish the lesson with the following section:
 1. Processing Many Images
 
 <a
-    class="custom-button custom-download-button" href="../../pdfs/05_segmentation/classic/classic_segmentation.pdf" download> <i class="fas fa-download"></i> Download Python Cheat Sheet
+    class="custom-button custom-download-button" href="../../../pdfs/05_segmentation/classic/classic_segmentation.pdf" download> <i class="fas fa-download"></i> Download Python Cheat Sheet
 </a>
 
 <div align="center">
-  <iframe class="custom-cheatsheet-frame" src="../../pdfs/05_segmentation/classic/classic_segmentation.pdf"> </iframe>
+  <iframe class="custom-cheatsheet-frame" src="../../../pdfs/05_segmentation/classic/classic_segmentation.pdf"> </iframe>
 </div>
-
 
 Let's get ready to code!
