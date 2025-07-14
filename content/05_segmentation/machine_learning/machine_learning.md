@@ -6,6 +6,8 @@ Machine learning is a subfield of artificial intelligence where algorithms learn
     <img src="../../../_static/images/ilastik_obj_classification/seg_methods_ml.png" alt="ml" width="700">
 </div>
 
+<br>
+
 First, we start by **extracting features** from the image. These features can include intensity, texture, shape, or edges, basically any measurable property of the image that helps describe what’s in it. A machine learning model is then trained on these features to learn patterns and distinguish between different structures or regions.
 
 Compared to classical rule-based methods, machine learning approaches are often more accurate and robust, especially when dealing with noisy or variable image data.
