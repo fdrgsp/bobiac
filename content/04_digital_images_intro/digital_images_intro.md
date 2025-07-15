@@ -18,11 +18,11 @@ We will use python in practice to:
 ### Inroduction to Digital Images
 
 <a
-    class="custom-button custom-download-button" href="../../pdfs/04_digital_images_intro/templates.pdf" download> <i class="fas fa-download"></i> Download the Slides
+    class="custom-button custom-download-button" href="../../pdfs/04_digital_images_intro/digital_images_intro.pdf" download> <i class="fas fa-download"></i> Download the Slides
 </a>
 
 <div align="center">
-  <iframe class="custom-pdf-frame" src="../../pdfs/04_digital_images_intro/templates.pdf"> </iframe>
+  <iframe class="custom-pdf-frame" src="../../pdfs/04_digital_images_intro/digital_images_intro.pdf"> </iframe>
 </div>
 
 ### Python for Bioimage Analysis
