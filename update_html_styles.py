@@ -7,15 +7,6 @@ from update_styles_data import EXAMPLE_STYLE, EXERCISE_STYLE, H2_STYLE, H3_STYLE
 # List of HTML files to exclude from styling (filename only, not full path)
 EXCLUDE_FROM_STYLING = [
     # Add HTML filenames here to exclude them from header styling
-    "bioimage_analysis_intro.html",
-    "python_basics.html",
-    "digital_images_intro.html",
-    "object_classification.html",
-    "measurement_and_quantification_intro.html",
-    "reproducibility_and_image_ethics.html",
-    "python_for_digital_images.html",
-    "segmentation_intro.html",
-    "intro_to_ilastik.html",
 ]
 
 
@@ -128,10 +119,18 @@ if __name__ == "__main__":
 
     # Require input path as command line argument
     if len(sys.argv) != 2:
-        print("Usage: python update_html_styles.py <path_to_html_directory>")
+        print("Usage: python update_html_styles.py <path_to_html_directory_or_file>")
         print("Example: python update_html_styles.py _build/html/content")
+        print("         python update_html_styles.py _build/landing-page.html")
         sys.exit(1)
 
     input_path = sys.argv[1]
+    input_path_obj = Path(input_path)
 
-    process_html_notebooks(input_path)
+    if input_path_obj.is_dir():
+        process_html_notebooks(input_path)
+    elif input_path_obj.is_file():
+        process_html_file(input_path_obj)
+    else:
+        print(f"❌ Path not found: {input_path}")
+        sys.exit(1)

@@ -8,6 +8,8 @@ from update_styles_data import EXAMPLE_STYLE, EXERCISE_STYLE, H2_STYLE, H3_STYLE
 
 HTML_TYPE = "mark"
 
+EXCLUDE = ["cellpose_notebook_colab.ipynb"]
+
 # When building the Jupyter Book, the links in the python_basics notebook
 # need to be updated when converting to a Jupyter Notebook or they will not work.
 # This is a mapping of the links in the book to the links that should be updated
@@ -28,7 +30,15 @@ map_03_python_basics_book_to_notebook = {
 }
 
 
-def update_notebooks(input_path: str | Path, output_path: str | Path) -> None:
+def update_notebooks(
+    input_path: str | Path, output_path: str | Path, teacher: bool
+) -> None:
+    # Check if the file should be excluded
+    input_filename = Path(input_path).name
+    if input_filename in EXCLUDE:
+        print(f"Skipping excluded file: {input_filename}")
+        return
+
     nb = nbformat.read(input_path, as_version=4)
     cleaned_cells = []
 
@@ -36,13 +46,16 @@ def update_notebooks(input_path: str | Path, output_path: str | Path) -> None:
         tags = cell.get("metadata", {}).get("tags", [])
 
         # remove buttons from the first cell and keep only the title
-        if i == 0 and cell.cell_type == "markdown":
+        # (only if buttons are present)
+        if (
+            i == 0
+            and cell.cell_type == "markdown"
+            and "custom-button-row" in cell.source
+        ):
             lines = cell.source.splitlines()
             cell.source = lines[0] if lines else ""
 
-        # clear the cell input if it has the 'teacher' tag (it is an exercise)
-        if "teacher" in tags:
-            # remove the tag
+        if not teacher and "teacher" in tags:
             tags.remove("teacher")
             # clear the cell content
             cell.source = ""
@@ -119,4 +132,5 @@ def update_notebooks(input_path: str | Path, output_path: str | Path) -> None:
 if __name__ == "__main__":
     src = Path(sys.argv[1])
     dest = Path(sys.argv[2])
-    update_notebooks(src, dest)
+    teacher_mode = sys.argv[3].lower() == "true"
+    update_notebooks(src, dest, teacher_mode)

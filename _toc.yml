@@ -8,7 +8,7 @@ parts:
 # COURSE MATERIAL
 - caption: Course Material
   chapters:
-  - file: content/01_intro_bioimage_analysis/bioimage_analysis_intro.md
+  - file: content/01_intro_to_bobiac/bobiac_intro.md
 
   - file: content/02_getting_started_with_python/getting_started_with_python.md
 
@@ -18,15 +18,13 @@ parts:
 
   - file: content/04_digital_images_intro/digital_images_intro.md
     sections:
-      - file: content/04_digital_images_intro/python_for_digital_images.md
+      - file: content/04_digital_images_intro/python_for_bioimage_analysis
 
   - file: content/05_segmentation/segmentation_intro.md
     sections:
       - file: content/05_segmentation/classic/classic.md
         sections:
-          - file: content/05_segmentation/classic/filters.md
-          - file: content/05_segmentation/classic/thresholding.md
-          - file: content/05_segmentation/classic/labeling.md
+          - file: content/05_segmentation/classic/classic_segmentation.ipynb
       - file: content/05_segmentation/machine_learning/machine_learning.md
         sections:
           - file: content/05_segmentation/machine_learning/intro_to_ilastik.md
@@ -34,7 +32,11 @@ parts:
           - file: content/05_segmentation/machine_learning/from_ilastik_masks_to_labels
       - file: content/05_segmentation/deep_learning/deep_learning.md
         sections:
+          # - file: content/05_segmentation/deep_learning/intro_dl.md
+          # - file: content/05_segmentation/deep_learning/dl_timeline.md
           - file: content/05_segmentation/deep_learning/intro_to_cellpose.md
+          - file: content/05_segmentation/deep_learning/cellpose_notebook
+          - file: content/05_segmentation/deep_learning/cellpose_retraining_colab
 
   - file: content/06_object_classification/object_classification.md
     sections:
@@ -49,6 +51,7 @@ parts:
     sections:
       - file: content/08_colocalization/pixel_intensity_based_colocalization_pearsons
       - file: content/08_colocalization/pixel_intensity_based_colocalization_manders
+      - file: content/08_colocalization/object_based_colocalization
 
   - file: content/09_reproducibility_and_image_ethics/reproducibility_and_image_ethics.md
 
@@ -60,11 +63,10 @@ parts:
     sections:
       - file: student_group_work/evaluation-notebook.ipynb
 
-
 # COURSE DATA
-- caption: Data
+- caption: Course Materials Downloads
   chapters:
-  - file: data/course_data.md
+  - file: data/course_downloads.md
 
 
 # LINKS/EXTRA
@@ -72,7 +74,11 @@ parts:
   chapters:
   - url: https://iac.hms.harvard.edu/bobiac/2025
     title: BoBiAC
+  - url: https://docs.astral.sh/uv/
+    title: uv
+  - url: https://github.com/manzt/juv
+    title: juv
   - url: https://iac.hms.harvard.edu
-    title: Image Analysis Collaboratory
-  - url: https://iac.hms.harvard.edu/bobiac/2025/uv_instruction.html
-    title: uv Installation Instruction
+    title: Image Analysis Collaboratory (IAC)
+  - url: https://cite.hms.harvard.edu
+    title: Core for Imaging Technology & Education (CITE)
