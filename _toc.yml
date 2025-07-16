@@ -60,6 +60,8 @@ parts:
 - caption: Student Working Groups
   chapters:
   - file: student_group_work/student_group_work.md
+    sections:
+      - file: student_group_work/evaluation-notebook.ipynb
 
 # COURSE DATA
 - caption: Course Materials Downloads
