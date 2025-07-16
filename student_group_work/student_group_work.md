@@ -2,16 +2,19 @@
 
 ## Overview
 
-Your turn! The goal of this group work is to apply the knowledge you have acquired in the course to develop a cell (instance) segmentation pipeline on 2D images provided.
+Your turn! The goal of this group work is to apply the knowledge you have acquired in the course to develop a cell (instance) segmentation pipeline on 2D images provided. Think of using all the tools you have learned in the course: smoothing, thresholding, morphological operations, thresholding, watershed, deep learning, fine-tuning, etc. The only constraint is that the segmentation mask should be a TIFF image of the same size as the ground truth.
 
 ## Data
 
-<a href="../_static/data/student_group_work/001_img.tiff" download> <i class="fas fa-download"></i> Student Group Work Image </a>
+You are given 3 images and 3 corresponding ground truth masks. Your task is to develop a segmentation pipeline that can segment the cells in the images as closely as possible to the ground truth. 
+
+<img src="../_static/images/student_group/segmentation_challenge.png" alt="Segmentation Challenge" width="100%">
+
+<a href="../_static/data/student_group_work.zip" download> <i class="fas fa-download"></i> Download the segmentation challenge dataset </a>
 
 ## Submission
 
-To submit your results, use the following notebook: [Evaluation notebook](../../notebooks/student_group_work/evaluation-notebook.ipynb)
-
+To submit your results, download the [Evaluation Notebook](../evaluation_notebook.html) section to evaluate your segmentation pipeline.
 
 ## Leaderboard
 
@@ -20,6 +23,13 @@ The leaderboard is available at [BoBIAC 2025 Segmentation Leaderboard](https://l
 ## Evaluation metrics
 
 Evaluating segmentation pipelines is a complex task, and there is no single metric that can capture all the aspects of the performance. We have chosen to use the following metrics:
+
+- **mAP**: The mean average precision is the average of the average precision for each class. It is computed as the area under the precision-recall curve.
+
+$$
+\text{mAP} = \frac{1}{n} \sum_{i=1}^{n} \text{AP}_i = \frac{1}{n} \sum_{i=1}^{n} \int_{0}^{1} \text{Precision}_i(r) \text{Recall}_i(r) dr
+$$
+
 
 - **Precision**: The precision is the percentage of pixels that are correctly classified.
 
