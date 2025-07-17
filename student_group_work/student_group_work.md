@@ -12,10 +12,6 @@ You are given 3 images and 3 corresponding ground truth masks. Your task is to d
 
 <a href="../_static/data/student_group_work.zip" download> <i class="fas fa-download"></i> Download the segmentation challenge dataset </a>
 
-## Submission
-
-To submit your results, download the [Evaluation Notebook](../evaluation_notebook.html) section to evaluate your segmentation pipeline.
-
 ## Leaderboard
 
 The leaderboard is available at [BoBIAC 2025 Segmentation Leaderboard](https://liveboard-bobiac.onrender.com/).
