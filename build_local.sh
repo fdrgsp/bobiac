@@ -52,9 +52,9 @@ echo "📁 Preparing notebooks for download and colab..."
 for folder in "${folders[@]}"; do
   for notebook in $(find "$folder" -name "*.ipynb"); do
     rel_path="${notebook#$folder/}"  # remove folder prefix dynamically
-    notebook_teacher_path="_build/html/notebooks_teacher/$folder/$rel_path"
-    notebook_path="_build/html/notebooks/$folder/$rel_path" 
-    colab_path="_build/html/colab_notebooks/$folder/$rel_path"
+    notebook_teacher_path="_build/html/notebooks_teacher/$rel_path"
+    notebook_path="_build/html/notebooks/$rel_path" 
+    colab_path="_build/html/colab_notebooks/$rel_path"
 
     notebook_teacher_dir=$(dirname "$notebook_teacher_path")
     notebook_dir=$(dirname "$notebook_path")
